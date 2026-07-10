@@ -3,37 +3,47 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/home.css">
      <!-- Temática de la página: Restaurante / Cafetería de Especialidad -->
-     <title> Ventana Café - Restaurante y Cafetería de Especialidad</title>
+     <title>Ventana Café - Restaurante y Cafetería de Especialidad</title>
 </head>
-<body>
+<body class="home-page">
      <header class="main-header">
           <div class="nav-container">
-               <div class="brand-logo">
+               <a href="index.html" class="brand-logo">
                     <span class="logo-dot"></span> Ventana Café
-               </div>
+               </a>
                <nav class="navigation-menu">
-                    <a href="#inicio" class="menu-item">Inicio</a>
-                    <a href="#nosotros" class="menu-item">Nosotros</a>
-                    <a href="#productos" class="menu-item">Productos</a>
-                    <a href="#servicios" class="menu-item">Servicios</a>
-                    <a href="#contacto" class="menu-item">Contacto</a>
+                    <a href="index.html" class="menu-item active">Inicio</a>
+                    <a href="nosotros.html" class="menu-item">Nosotros</a>
+                    <a href="productos.html" class="menu-item">Productos</a>
+                    <a href="servicios.html" class="menu-item">Servicios</a>
+                    <a href="contacto.html" class="menu-item">Contacto</a>
                </nav>
                <div class="header-cta">
-                    <a href="#contacto" class="action-link">Reservar</a>
+                    <a href="contacto.html" class="action-link">Reservar</a>
                </div>
           </div>
      </header>
+
      <main id="content-area">
           <section id="inicio" class="hero-block">
                <div class="hero-inner">
                     <div class="hero-badge">&bull; Alta Especialidad</div>
-                    <h1 class="hero-heading">El arte del buen café, <br><span class="highlight-text">elevado a ritual.</span></h1>
+                    <h1 class="hero-heading">
+                         <span class="word" style="animation-delay:0.05s">El</span>
+                         <span class="word" style="animation-delay:0.12s">arte</span>
+                         <span class="word" style="animation-delay:0.19s">del</span>
+                         <span class="word" style="animation-delay:0.26s">buen</span>
+                         <span class="word" style="animation-delay:0.33s">café,</span>
+                         <br>
+                         <span class="highlight-text word" style="animation-delay:0.42s">elevado a ritual.</span>
+                    </h1>
                     <p class="hero-lead">Seleccionamos granos de fincas sostenibles para crear perfiles de sabor contemporáneos. Una experiencia minimalista enfocada en la pureza de cada taza y la precisión del barismo moderno.</p>
                     <div class="hero-actions-row">
-                         <a href="#productos" class="button-solid" id="cta-main">Ver Carta</a>
-                         <a href="#servicios" class="button-ghost">Experiencias</a>
+                         <a href="productos.html" class="button-solid" id="cta-main">Ver Carta</a>
+                         <a href="servicios.html" class="button-ghost">Experiencias</a>
                     </div>
                     <div class="metrics-flex-container">
                          <div class="metric-card">
@@ -47,12 +57,75 @@
                     </div>
                </div>
           </section>
+
+          <section id="por-que-elegirnos">
+               <div class="reveal">
+                    <p class="section-eyebrow">Nuestra diferencia</p>
+                    <h2 class="section-heading">Por qué elegir Ventana Café</h2>
+                    <p class="section-sub">Tres principios que guían cada taza que servimos, desde el origen del grano hasta tu mesa.</p>
+               </div>
+               <div class="features-grid reveal-stagger reveal">
+                    <div class="glass-card feature-card">
+                         <div class="feature-icon">☕</div>
+                         <h3>Origen trazable</h3>
+                         <p>Trabajamos directamente con fincas productoras, garantizando trazabilidad completa de cada lote.</p>
+                    </div>
+                    <div class="glass-card feature-card">
+                         <div class="feature-icon">✦</div>
+                         <h3>Tueste de precisión</h3>
+                         <p>Perfiles de tueste desarrollados para resaltar la acidez, el cuerpo y el dulzor natural de cada grano.</p>
+                    </div>
+                    <div class="glass-card feature-card">
+                         <div class="feature-icon">◐</div>
+                         <h3>Barismo experto</h3>
+                         <p>Un equipo formado en técnicas de extracción modernas, dedicado a la consistencia en cada taza.</p>
+                    </div>
+               </div>
+          </section>
+
+          <section id="carta-teaser">
+               <div class="glass-card menu-teaser reveal">
+                    <div class="menu-teaser-text">
+                         <p class="section-eyebrow">Nuestra carta</p>
+                         <h2 class="section-heading">Una selección pensada al detalle</h2>
+                         <p class="section-sub" style="margin-bottom:1.5rem;">Desde espressos intensos hasta métodos de filtrado de autor. Descubre la carta completa.</p>
+                         <a href="productos.html" class="button-solid">Explorar Menú Completo</a>
+                    </div>
+                    <div class="menu-teaser-items">
+                         <div class="teaser-row"><span>Espresso Clásico</span><span>S/ 8.00</span></div>
+                         <div class="teaser-row"><span>V60 Origen Único</span><span>S/ 14.00</span></div>
+                         <div class="teaser-row"><span>Flat White</span><span>S/ 12.00</span></div>
+                         <div class="teaser-row"><span>Croissant de Almendras</span><span>S/ 9.50</span></div>
+                    </div>
+               </div>
+          </section>
      </main>
+
      <footer class="main-footer">
           <div class="footer-inner">
-               <p>&copy; 2025 Ventana Café. Todos los derechos reservados.</p>
+               <div class="footer-brand">
+                    <div class="brand-logo"><span class="logo-dot"></span> Ventana Café</div>
+                    <p>Café de especialidad, barismo de precisión y un espacio pensado para pausar el día.</p>
+               </div>
+               <div class="footer-cols">
+                    <div class="footer-col">
+                         <h4>Navegación</h4>
+                         <a href="index.html">Inicio</a>
+                         <a href="nosotros.html">Nosotros</a>
+                         <a href="productos.html">Productos</a>
+                         <a href="servicios.html">Servicios</a>
+                         <a href="contacto.html">Contacto</a>
+                    </div>
+                    <div class="footer-col">
+                         <h4>Contacto</h4>
+                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hola@ventanacafe.com&su=Consulta%20Ventana%20Café" target="_blank" rel="noopener noreferrer">hola@ventanacafe.com</a>
+                         <a href="https://wa.me/51999888777?text=Hola,%20me%20gustaría%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer">+51 999 888 777</a>
+                    </div>
+               </div>
+          </div>
+          <div class="footer-bottom">
+               <p>&copy; 2026 Ventana Café. Todos los derechos reservados.</p>
           </div>
      </footer>
-
 </body>
 </html>

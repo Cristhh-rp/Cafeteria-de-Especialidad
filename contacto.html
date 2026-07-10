@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/contacto.css">
+     <title>Contacto - Ventana Café</title>
+</head>
+<body class="contacto-page">
+     <header class="main-header">
+          <div class="nav-container">
+               <a href="index.html" class="brand-logo">
+                    <span class="logo-dot"></span> Ventana Café
+               </a>
+               <nav class="navigation-menu">
+                    <a href="index.html" class="menu-item">Inicio</a>
+                    <a href="nosotros.html" class="menu-item">Nosotros</a>
+                    <a href="productos.html" class="menu-item">Productos</a>
+                    <a href="servicios.html" class="menu-item">Servicios</a>
+                    <a href="contacto.html" class="menu-item active">Contacto</a>
+               </nav>
+               <div class="header-cta">
+                    <a href="contacto.html" class="action-link">Reservar</a>
+               </div>
+          </div>
+     </header>
+
+     <div class="page-body">
+     <main id="content-area">
+          <section class="page-hero">
+               <div class="page-badge">&bull; Escríbenos</div>
+               <h1 class="page-title">Contacto</h1>
+               <p class="page-lead">¿Tienes una consulta, quieres reservar una mesa o coordinar un servicio? Escríbenos y te respondemos a la brevedad.</p>
+          </section>
+
+          <section id="contacto-detalle">
+               <div class="contact-layout reveal">
+                    <div class="glass-card contact-info-card">
+                         <div class="info-row">
+                              <div class="info-icon">📍</div>
+                              <div>
+                                   <h4>Dirección</h4>
+                                   <p>Av. Los Robles 245, Ventanilla, Callao, Perú</p>
+                              </div>
+                         </div>
+                         <div class="info-row">
+                              <div class="info-icon">🕒</div>
+                              <div>
+                                   <h4>Horario</h4>
+                                   <p>Lun. a Vie. 7:00 am – 9:00 pm<br>Sáb. y Dom. 8:00 am – 10:00 pm</p>
+                              </div>
+                         </div>
+                         <div class="info-row">
+                              <div class="info-icon">✉</div>
+                              <div>
+                                   <h4>Correo</h4>
+                                   <p>hola@ventanacafe.com</p>
+                              </div>
+                         </div>
+                         <div class="info-row">
+                              <div class="info-icon">📞</div>
+                              <div>
+                                   <h4>Teléfono</h4>
+                                   <p>+51 999 888 777</p>
+                              </div>
+                         </div>
+                         <div class="social-row">
+                              <a href="https://instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                                   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+                              </a>
+                              <a href="https://facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                                   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 8.5h-2a2 2 0 0 0-2 2V21M8 13h5"/><circle cx="12" cy="12" r="9.5"/></svg>
+                              </a>
+                              <a href="https://tiktok.com/" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                                   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3v11.2a3.3 3.3 0 1 1-2.6-3.23"/><path d="M14 3c.5 2.6 2.2 4.3 4.6 4.6"/></svg>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="glass-card contact-form-card">
+                         <p class="section-eyebrow">Formulario</p>
+                         <h2 class="section-heading" style="margin-bottom:1.5rem;">Envíanos un mensaje</h2>
+
+                         <form id="contact-form" action="#mensaje-enviado" method="get">
+                              <div class="form-two-col">
+                                   <div class="form-row">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" id="nombre" required placeholder="Tu nombre">
+                                   </div>
+                                   <div class="form-row">
+                                        <label for="correo">Correo</label>
+                                        <input type="email" id="correo" required placeholder="tucorreo@ejemplo.com">
+                                   </div>
+                              </div>
+                              <div class="form-row">
+                                   <label for="asunto">Asunto</label>
+                                   <input type="text" id="asunto" required placeholder="¿En qué te ayudamos?">
+                              </div>
+                              <div class="form-row">
+                                   <label for="mensaje">Mensaje</label>
+                                   <textarea id="mensaje" rows="5" required placeholder="Cuéntanos los detalles..."></textarea>
+                              </div>
+                              <button type="submit" class="button-solid">Enviar Mensaje</button>
+                              <div class="form-success" id="mensaje-enviado">
+                                   <div class="success-icon">&#10004;</div>
+                                   <h4>¡Gracias! Tu mensaje quedó registrado.</h4>
+                              </div>
+                         </form>
+                    </div>
+               </div>
+          </section>
+     </main>
+     </div>
+
+     <footer class="main-footer">
+          <div class="footer-inner">
+               <div class="footer-brand">
+                    <div class="brand-logo"><span class="logo-dot"></span> Ventana Café</div>
+                    <p>Café de especialidad, barismo de precisión y un espacio pensado para pausar el día.</p>
+               </div>
+               <div class="footer-cols">
+                    <div class="footer-col">
+                         <h4>Navegación</h4>
+                         <a href="index.html">Inicio</a>
+                         <a href="nosotros.html">Nosotros</a>
+                         <a href="productos.html">Productos</a>
+                         <a href="servicios.html">Servicios</a>
+                         <a href="contacto.html">Contacto</a>
+                    </div>
+                    <div class="footer-col">
+                         <h4>Contacto</h4>
+                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hola@ventanacafe.com&su=Consulta%20Ventana%20Café" target="_blank" rel="noopener noreferrer">hola@ventanacafe.com</a>
+                         <a href="https://wa.me/51999888777?text=Hola,%20me%20gustaría%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer">+51 999 888 777</a>
+                    </div>
+               </div>
+          </div>
+          <div class="footer-bottom">
+               <p>&copy; 2026 Ventana Café. Todos los derechos reservados.</p>
+          </div>
+     </footer>
+</body>
+</html>

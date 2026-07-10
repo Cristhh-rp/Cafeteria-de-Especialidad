@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/productos.css">
+     <title>Menú - Ventana Café</title>
+</head>
+<body class="productos-page">
+     <header class="main-header">
+          <div class="nav-container">
+               <a href="index.html" class="brand-logo">
+                    <span class="logo-dot"></span> Ventana Café
+               </a>
+               <nav class="navigation-menu">
+                    <a href="index.html" class="menu-item">Inicio</a>
+                    <a href="nosotros.html" class="menu-item">Nosotros</a>
+                    <a href="productos.html" class="menu-item active">Productos</a>
+                    <a href="servicios.html" class="menu-item">Servicios</a>
+                    <a href="contacto.html" class="menu-item">Contacto</a>
+               </nav>
+               <div class="header-cta">
+                    <a href="contacto.html" class="action-link">Reservar</a>
+               </div>
+          </div>
+     </header>
+
+     <div class="page-body">
+     <main id="content-area">
+          <section class="page-hero">
+               <div class="page-badge">&bull; Carta 2026</div>
+               <h1 class="page-title">Nuestro Menú</h1>
+               <p class="page-lead">Una carta pensada en torno al grano: espressos, métodos de filtrado, bebidas frías y repostería de elaboración propia.</p>
+          </section>
+
+          <section id="carta">
+               <div class="filter-bar reveal">
+                    <input type="radio" id="f-todos" name="filtro" checked style="display: none;">
+                    <label for="f-todos" class="filter-btn">Todos</label>
+
+                    <input type="radio" id="f-espresso" name="filtro" style="display: none;">
+                    <label for="f-espresso" class="filter-btn">Barra de Espresso</label>
+
+                    <input type="radio" id="f-filtrado" name="filtro" style="display: none;">
+                    <label for="f-filtrado" class="filter-btn">Métodos de Filtrado</label>
+
+                    <input type="radio" id="f-frio" name="filtro" style="display: none;">
+                    <label for="f-frio" class="filter-btn">Bebidas Frías</label>
+
+                    <input type="radio" id="f-reposteria" name="filtro" style="display: none;">
+                    <label for="f-reposteria" class="filter-btn">Repostería</label>
+               </div>
+
+               <div class="menu-grid reveal-stagger reveal" id="menu-ribbon" tabindex="0" aria-label="Carta de productos, desliza para ver más">
+
+                         <article class="glass-card menu-card" data-category="espresso">
+                              <div class="menu-card-photo">
+                                   <img src="https://i.pinimg.com/736x/a4/dd/39/a4dd393de0d6aa95466a1557c7dd5e7a.jpg" alt="Espresso Clásico servido en taza pequeña sobre fondo oscuro" loading="lazy" draggable="false">
+                              </div>
+                              <div class="menu-card-top">
+                                   <h3>Espresso Clásico</h3>
+                                   <span class="menu-card-price">S/ 8.00</span>
+                              </div>
+                              <span class="menu-card-tag">Espresso</span>
+                              <p class="menu-card-desc">Extracción corta de nuestro blend de casa, notas de cacao y caramelo tostado.</p>
+                         </article>
+
+                         <article class="glass-card menu-card" data-category="espresso">
+                              <div class="menu-card-photo">
+                                   <img src="https://i.pinimg.com/736x/2f/10/31/2f1031a4595f534605b714427d72dfda.jpg" alt="Flat White con arte latte en taza blanca" loading="lazy" draggable="false">
+                              </div>
+                              <div class="menu-card-top">
+                                   <h3>Flat White</h3>
+                                   <span class="menu-card-price">S/ 12.00</span>
+                              </div>
+                              <span class="menu-card-tag">Espresso</span>
+                              <p class="menu-card-desc">Doble ristretto con leche microespumada, textura sedosa y equilibrio dulce.</p>
+                         </article>
+
+                         <article class="glass-card menu-card" data-category="espresso">
+                              <div class="menu-card-photo">
+                                   <img src="https://i.pinimg.com/736x/56/e4/a3/56e4a3771d4ce25f2329fbbcc62923c7.jpg" alt="Cortado de autor servido en vidrio sobre mesa de madera" loading="lazy" draggable="false">
+                              </div>
+                              <div class="menu-card-top">
+                                   <h3>Espresso Cortado</h3>
+                                   <span class="menu-card-price">S/ 11.00</span>
+                              </div>
+                              <span class="menu-card-tag">Espresso</span>
+                              <p class="menu-card-desc">Espresso de origen único cortado con leche a temperatura controlada.</p>
+                         </article>
+
+                         <article class="glass-card menu-card" data-category="filtrado">
+                              <div class="menu-card-photo">
+                                   <img src="https://i.pinimg.com/736x/4e/ad/87/4ead87955af24f6b1d7b909571baa9a1.jpg" alt="Preparación de café V60 por goteo manual" loading="lazy" draggable="false">
+                              </div>
+                              <div class="menu-card-top">
+                                   <h3>V60 Origen Único</h3>
+                                   <span class="menu-card-price">S/ 14.00</span>
+                              </div>
+                              <span class="menu-card-tag">Filtrado</span>
+                              <p class="menu-card-desc">Café de altura preparado por goteo manual, taza limpia con notas florales.</p>
+                         </article>
+
+                         <article class="glass-card menu-card" data-category="filtrado">
+                              <div class="menu-card-photo">
+                                   <img src="https://i.pinimg.com/1200x/b4/70/7e/b4707e141f87eedc1275a2e644731c04.jpg" alt="Preparación de café en Chemex para compartir" loading="lazy" draggable="false">
+                              </div>
+                              <div class="menu-card-top">
+                                   <h3>Chemex para Dos</h3>
+                                   <span class="menu-card-price">S/ 22.00</span>
+                              </div>
+                              <span class="menu-card-tag">Filtrado</span>
+                              <p class="menu-card-desc">Preparación en jarra para compartir, cuerpo suave y acidez balanceada.</p>
+                         </article>
+
+                         <article class="glass-card menu-card" data-category="filtrado">
+                              <div class="menu-card-photo">
+                                   <img src="https://i.pinimg.com/736x/b5/19/9e/b5199ec77068b71c03ea4bf179df7a5d.jpg" alt="Barra de café de especialidad con método Aeropress" loading="lazy" draggable="false">
+                              </div>
+                              <div class="menu-card-top">
+                                   <h3>Aeropress</h3>
+                                   <span class="menu-card-price">S/ 13.00</span>
+                              </div>
+                              <span class="menu-card-tag">Filtrado</span>
+                              <p class="menu-card-desc">Extracción a presión, taza concentrada con final dulce y textura aterciopelada.</p>
+                         </article>
+
+                         <article class="glass-card menu-card" data-category="frio">
+                              <div class="menu-card-photo">
+                                   <img src="https://i.pinimg.com/736x/8d/dd/b5/8dddb538b045fdf9dff3c6a5568e0122.jpg" alt="Cold Brew de 12 horas de infusión, notas a chocolate oscuro" loading="lazy" draggable="false">
+                              </div>
+                              <div class="menu-card-top">
+                                   <h3>Cold Brew 12h</h3>
+                                   <span class="menu-card-price">S/ 13.00</span>
+                              </div>
+                              <span class="menu-card-tag">Frío</span>
+                              <p class="menu-card-desc">Infusión en frío durante 12 horas, baja acidez y notas a chocolate oscuro.</p>
+                         </article>
+
+                         <article class="glass-card menu-card" data-category="frio">
+                              <div class="menu-card-photo">
+                                   <img src="https://i.pinimg.com/1200x/9a/86/e4/9a86e4f69332fda5764c73364d7a5ee0.jpg" alt="Latte Tónico servido con hielo, cítrico y burbujeante" loading="lazy" draggable="false">
+                              </div>
+                              <div class="menu-card-top">
+                                   <h3>Latte Tónico</h3>
+                                   <span class="menu-card-price">S/ 15.00</span>
+                              </div>
+                              <span class="menu-card-tag">Frío</span>
+                              <p class="menu-card-desc">Espresso doble sobre agua tónica y hielo, cítrico, burbujeante y refrescante.</p>
+                         </article>
+
+                         <article class="glass-card menu-card" data-category="reposteria">
+                              <div class="menu-card-photo">
+                                   <img src="https://i.pinimg.com/736x/50/85/8a/50858a28c1fc640711346ce197fdfe3b.jpg" alt="Croissant de almendras recién horneado" loading="lazy" draggable="false">
+                              </div>
+                              <div class="menu-card-top">
+                                   <h3>Croissant de Almendras</h3>
+                                   <span class="menu-card-price">S/ 9.50</span>
+                              </div>
+                              <span class="menu-card-tag">Repostería</span>
+                              <p class="menu-card-desc">Hojaldrado artesanal relleno de crema de almendras, horneado cada mañana.</p>
+                         </article>
+
+                         <article class="glass-card menu-card" data-category="reposteria">
+                              <div class="menu-card-photo">
+                                   <img src="https://i.pinimg.com/1200x/83/45/2a/83452aead910fd3247a4905e55470bd8.jpg" alt="Cheesecake de maracuyá servido en plato junto a café" loading="lazy" draggable="false">
+                              </div>
+                              <div class="menu-card-top">
+                                   <h3>Cheesecake de Maracuyá</h3>
+                                   <span class="menu-card-price">S/ 11.00</span>
+                              </div>
+                              <span class="menu-card-tag">Repostería</span>
+                              <p class="menu-card-desc">Base de galleta, relleno cremoso y cobertura ácida de maracuyá fresco.</p>
+                         </article>
+
+                         <article class="glass-card menu-card" data-category="reposteria">
+                              <div class="menu-card-photo">
+                                   <img src="https://i.pinimg.com/736x/61/5d/32/615d32daf34831da47c6d8d597aa35a5.jpg" alt="Banana Bread casero recién horneado" loading="lazy" draggable="false">
+                              </div>
+                              <div class="menu-card-top">
+                                   <h3>Banana Bread</h3>
+                                   <span class="menu-card-price">S/ 8.50</span>
+                              </div>
+                              <span class="menu-card-tag">Repostería</span>
+                              <p class="menu-card-desc">Receta de casa con nueces tostadas, húmedo y ligeramente especiado.</p>
+                         </article>
+               </div>
+          </section>
+     </main>
+     </div>
+
+     <footer class="main-footer">
+          <div class="footer-inner">
+               <div class="footer-brand">
+                    <div class="brand-logo"><span class="logo-dot"></span> Ventana Café</div>
+                    <p>Café de especialidad, barismo de precisión y un espacio pensado para pausar el día.</p>
+               </div>
+               <div class="footer-cols">
+                    <div class="footer-col">
+                         <h4>Navegación</h4>
+                         <a href="index.html">Inicio</a>
+                         <a href="nosotros.html">Nosotros</a>
+                         <a href="productos.html">Productos</a>
+                         <a href="servicios.html">Servicios</a>
+                         <a href="contacto.html">Contacto</a>
+                    </div>
+                    <div class="footer-col">
+                         <h4>Contacto</h4>
+                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hola@ventanacafe.com&su=Consulta%20Ventana%20Café" target="_blank" rel="noopener noreferrer">hola@ventanacafe.com</a>
+                         <a href="https://wa.me/51999888777?text=Hola,%20me%20gustaría%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer">+51 999 888 777</a>
+                    </div>
+               </div>
+          </div>
+          <div class="footer-bottom">
+               <p>&copy; 2026 Ventana Café. Todos los derechos reservados.</p>
+          </div>
+     </footer>
+</body>
+</html>

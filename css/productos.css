@@ -1,0 +1,147 @@
+body.productos-page {
+     --bg-image: url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1200&auto=format&fit=crop');
+}
+
+.filter-bar {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 0.75rem;
+     margin-bottom: 3rem;
+}
+
+.filter-btn {
+     background-color: rgba(18, 10, 7, 0.5);
+     border: 1px solid var(--border-subtle);
+     color: var(--color-muted);
+     padding: 0.55rem 1.3rem;
+     border-radius: 30px;
+     font-size: 0.82rem;
+     font-weight: 600;
+     cursor: pointer;
+     backdrop-filter: blur(6px);
+     transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+}
+
+.filter-btn:hover {
+     transform: translateY(-2px);
+     color: var(--color-light);
+}
+
+.menu-grid {
+     display: flex;
+     gap: 1.5rem;
+     overflow-x: auto;
+     scroll-snap-type: x proximity;
+     scroll-behavior: smooth;
+     padding: 0.5rem 0.25rem 1.5rem;
+     -webkit-overflow-scrolling: touch;
+     scrollbar-width: thin;
+     scrollbar-color: var(--color-accent) transparent;
+     position: relative;
+}
+
+.menu-grid::-webkit-scrollbar {
+     height: 8px;
+}
+
+.menu-grid::-webkit-scrollbar-track {
+     background: rgba(197, 168, 128, 0.08);
+     border-radius: 10px;
+}
+
+.menu-grid::-webkit-scrollbar-thumb {
+     background-color: var(--color-accent);
+     border-radius: 10px;
+}
+
+.menu-card {
+     padding: 1.75rem;
+     display: flex;
+     flex-direction: column;
+     gap: 0.65rem;
+     flex: 0 0 280px;
+     scroll-snap-align: start;
+     transition: transform 0.35s var(--ease-smooth), background-color 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease, opacity 0.35s ease;
+}
+
+.menu-card-photo {
+     width: 100%;
+     aspect-ratio: 4/3;
+     border-radius: 10px;
+     overflow: hidden;
+     border: 1px solid var(--border-subtle);
+     margin-bottom: 0.25rem;
+}
+
+.menu-card-photo img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     pointer-events: none;
+     transition: transform 0.5s var(--ease-smooth);
+}
+
+.menu-card:hover .menu-card-photo img {
+     transform: scale(1.06);
+}
+
+@media (max-width: 640px) {
+     .menu-card { flex-basis: 240px; }
+}
+
+.menu-card-top {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     gap: 1rem;
+}
+
+.menu-card-top h3 {
+     font-size: 1.1rem;
+     font-weight: 700;
+}
+
+.menu-card-price {
+     color: var(--color-accent);
+     font-weight: 700;
+     font-size: 1.05rem;
+     white-space: nowrap;
+}
+
+.menu-card-desc {
+     color: var(--color-muted);
+     font-size: 0.88rem;
+     line-height: 1.55;
+     flex-grow: 1;
+}
+
+.menu-card-tag {
+     align-self: flex-start;
+     font-size: 0.68rem;
+     font-weight: 600;
+     letter-spacing: 0.5px;
+     text-transform: uppercase;
+     color: var(--color-accent);
+     background-color: var(--color-accent-soft);
+     border: 1px solid var(--border-subtle);
+     padding: 0.25rem 0.7rem;
+     border-radius: 20px;
+}
+
+body:has(#f-todos:checked) label[for="f-todos"],
+body:has(#f-espresso:checked) label[for="f-espresso"],
+body:has(#f-filtrado:checked) label[for="f-filtrado"],
+body:has(#f-frio:checked) label[for="f-frio"],
+body:has(#f-reposteria:checked) label[for="f-reposteria"] {
+     background-color: var(--color-accent);
+     color: var(--color-dark);
+     border-color: var(--color-accent);
+}
+
+body:has(#f-espresso:checked) .menu-card:not([data-category="espresso"]),
+body:has(#f-filtrado:checked) .menu-card:not([data-category="filtrado"]),
+body:has(#f-frio:checked) .menu-card:not([data-category="frio"]),
+body:has(#f-reposteria:checked) .menu-card:not([data-category="reposteria"]) {
+     display: none;
+}
+

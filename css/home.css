@@ -1,0 +1,207 @@
+body.home-page {
+     background: linear-gradient(
+          rgba(18, 10, 7, 0.88),
+          rgba(18, 10, 7, 0.92)
+     ),
+     url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop') no-repeat center center fixed;
+     background-size: cover;
+}
+
+.hero-block {
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     max-width: 1100px;
+     margin: 0 auto;
+     padding: 8rem 1.5rem 3rem 1.5rem;
+}
+
+#inicio {
+     position: relative;
+     z-index: 2;
+}
+
+.hero-inner {
+     max-width: 700px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+}
+
+.hero-badge {
+     background-color: rgba(197, 168, 128, 0.15);
+     color: var(--color-accent);
+     font-size: 0.75rem;
+     font-weight: 600;
+     letter-spacing: 1.5px;
+     text-transform: uppercase;
+     padding: 0.4rem 1rem;
+     border-radius: 30px;
+     margin-bottom: 2rem;
+     border: 1px solid var(--border-subtle);
+     backdrop-filter: blur(4px);
+}
+
+.hero-heading {
+     font-size: 3.75rem;
+     font-weight: 800;
+     line-height: 1.1;
+     letter-spacing: -1.5px;
+     margin-bottom: 1.5rem;
+     text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.hero-heading .word {
+     display: inline-block;
+     opacity: 0;
+     transform: translateY(18px);
+     animation: fadeSlideUp 0.7s var(--ease-smooth) forwards;
+}
+
+.highlight-text {
+     color: var(--color-accent);
+     font-weight: 400;
+     font-family: serif;
+     font-style: italic;
+}
+
+.hero-lead {
+     color: var(--color-muted);
+     font-size: 1.1rem;
+     margin-bottom: 2.5rem;
+     max-width: 560px;
+     text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+     opacity: 0;
+     animation: fadeSlideUp 0.7s var(--ease-smooth) forwards;
+     animation-delay: 0.5s;
+}
+
+.hero-actions-row {
+     display: flex;
+     gap: 1rem;
+     margin-bottom: 4.5rem;
+     opacity: 0;
+     animation: fadeSlideUp 0.7s var(--ease-smooth) forwards;
+     animation-delay: 0.65s;
+}
+
+#cta-main:hover {
+     transform: scale(1.03);
+}
+
+.metrics-flex-container {
+     display: flex;
+     gap: 1.5rem;
+     width: 100%;
+     flex-wrap: wrap;
+     opacity: 0;
+     animation: fadeSlideUp 0.7s var(--ease-smooth) forwards;
+     animation-delay: 0.8s;
+}
+
+.metric-card {
+     background-color: var(--color-card);
+     backdrop-filter: blur(8px);
+     -webkit-backdrop-filter: blur(8px);
+     border: 1px solid var(--border-subtle);
+     padding: 1.25rem 2rem;
+     border-radius: 12px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+     flex: 1 1 180px;
+     max-width: 280px;
+     transition: transform 0.3s var(--ease-smooth), border-color 0.3s ease;
+}
+
+.metric-card:hover {
+     transform: translateY(-4px);
+     border-color: rgba(197, 168, 128, 0.5);
+}
+
+.metric-value {
+     font-size: 2.25rem;
+     font-weight: 700;
+     color: var(--color-light);
+     line-height: 1;
+     margin-bottom: 0.25rem;
+}
+
+.metric-title {
+     font-size: 0.75rem;
+     color: var(--color-muted);
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+}
+
+.features-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 1.5rem;
+}
+
+.feature-card {
+     padding: 2rem 1.75rem;
+}
+
+.feature-icon {
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     background-color: var(--color-accent-soft);
+     border: 1px solid var(--border-subtle);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.2rem;
+     margin-bottom: 1.25rem;
+     color: var(--color-accent);
+}
+
+.feature-card h3 {
+     font-size: 1.1rem;
+     margin-bottom: 0.6rem;
+}
+
+.feature-card p {
+     color: var(--color-muted);
+     font-size: 0.9rem;
+}
+
+@media (max-width: 860px) {
+     .features-grid { grid-template-columns: 1fr; }
+     .hero-heading { font-size: 2.6rem; }
+}
+
+.menu-teaser {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 2.5rem;
+     padding: 3rem;
+     flex-wrap: wrap;
+}
+
+.menu-teaser-text {
+     max-width: 480px;
+}
+
+.menu-teaser-items {
+     display: flex;
+     flex-direction: column;
+     gap: 0.75rem;
+     flex: 1 1 260px;
+}
+
+.teaser-row {
+     display: flex;
+     justify-content: space-between;
+     border-bottom: 1px dashed var(--border-subtle);
+     padding-bottom: 0.6rem;
+     font-size: 0.92rem;
+}
+
+.teaser-row span:last-child {
+     color: var(--color-accent);
+     font-weight: 600;
+}
+
+
