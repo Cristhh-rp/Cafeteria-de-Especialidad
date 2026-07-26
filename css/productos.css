@@ -10,6 +10,9 @@ body.productos-page {
 }
 
 .filter-btn {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
      background-color: rgba(18, 10, 7, 0.5);
      border: 1px solid var(--border-subtle);
      color: var(--color-muted);
@@ -85,6 +88,17 @@ body.productos-page {
      transform: scale(1.06);
 }
 
+.ribbon-hint {
+     color: var(--color-muted);
+     font-size: 0.8rem;
+     margin-top: 0.5rem;
+     text-align: right;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     gap: 0.4rem;
+}
+
 @media (max-width: 640px) {
      .menu-card { flex-basis: 240px; }
 }
@@ -99,6 +113,7 @@ body.productos-page {
 .menu-card-top h3 {
      font-size: 1.1rem;
      font-weight: 700;
+     font-family: var(--font-heading);
 }
 
 .menu-card-price {
@@ -144,4 +159,3 @@ body:has(#f-frio:checked) .menu-card:not([data-category="frio"]),
 body:has(#f-reposteria:checked) .menu-card:not([data-category="reposteria"]) {
      display: none;
 }
-

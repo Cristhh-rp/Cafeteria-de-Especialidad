@@ -29,6 +29,9 @@ body.home-page {
 }
 
 .hero-badge {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.4rem;
      background-color: rgba(197, 168, 128, 0.15);
      color: var(--color-accent);
      font-size: 0.75rem;
@@ -55,13 +58,18 @@ body.home-page {
      display: inline-block;
      opacity: 0;
      transform: translateY(18px);
-     animation: fadeSlideUp 0.7s var(--ease-smooth) forwards;
+     animation: heroWordIn 0.7s var(--ease-smooth) forwards;
+}
+
+@keyframes heroWordIn {
+     from { opacity: 0; transform: translateY(18px); }
+     to { opacity: 1; transform: translateY(0); }
 }
 
 .highlight-text {
      color: var(--color-accent);
      font-weight: 400;
-     font-family: serif;
+     font-family: var(--font-heading);
      font-style: italic;
 }
 
@@ -71,18 +79,13 @@ body.home-page {
      margin-bottom: 2.5rem;
      max-width: 560px;
      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-     opacity: 0;
-     animation: fadeSlideUp 0.7s var(--ease-smooth) forwards;
-     animation-delay: 0.5s;
 }
 
 .hero-actions-row {
      display: flex;
      gap: 1rem;
      margin-bottom: 4.5rem;
-     opacity: 0;
-     animation: fadeSlideUp 0.7s var(--ease-smooth) forwards;
-     animation-delay: 0.65s;
+     flex-wrap: wrap;
 }
 
 #cta-main:hover {
@@ -94,9 +97,6 @@ body.home-page {
      gap: 1.5rem;
      width: 100%;
      flex-wrap: wrap;
-     opacity: 0;
-     animation: fadeSlideUp 0.7s var(--ease-smooth) forwards;
-     animation-delay: 0.8s;
 }
 
 .metric-card {
@@ -123,6 +123,7 @@ body.home-page {
      color: var(--color-light);
      line-height: 1;
      margin-bottom: 0.25rem;
+     font-family: var(--font-heading);
 }
 
 .metric-title {
@@ -130,12 +131,6 @@ body.home-page {
      color: var(--color-muted);
      text-transform: uppercase;
      letter-spacing: 0.5px;
-}
-
-.features-grid {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     gap: 1.5rem;
 }
 
 .feature-card {
@@ -151,7 +146,7 @@ body.home-page {
      display: flex;
      align-items: center;
      justify-content: center;
-     font-size: 1.2rem;
+     font-size: 1.15rem;
      margin-bottom: 1.25rem;
      color: var(--color-accent);
 }
@@ -167,7 +162,6 @@ body.home-page {
 }
 
 @media (max-width: 860px) {
-     .features-grid { grid-template-columns: 1fr; }
      .hero-heading { font-size: 2.6rem; }
 }
 
@@ -203,5 +197,3 @@ body.home-page {
      color: var(--color-accent);
      font-weight: 600;
 }
-
-
