@@ -1,3 +1,14 @@
+
+@view-transition {
+     navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+     animation-duration: 0.35s;
+     animation-timing-function: ease-out;
+}
+
 :root {
      --color-dark: #120a07;
      --color-light: #f5f2eb;
@@ -203,9 +214,6 @@ h1, h2, h3, h4,
      }
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
 .main-footer {
      border-top: 1px solid var(--border-subtle);
      padding: 3rem 1.5rem 2rem;
@@ -467,18 +475,6 @@ section {
 
 [data-aos] {
      transition-timing-function: var(--ease-smooth) !important;
-}
-
-@media (prefers-reduced-motion: reduce) {
-     html { scroll-behavior: auto; }
-     .logo-dot {
-          animation: none !important;
-     }
-     [data-aos] {
-          transition: none !important;
-          transform: none !important;
-          opacity: 1 !important;
-     }
 }
 
 a:focus-visible,
